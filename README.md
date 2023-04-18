@@ -14,7 +14,7 @@ Our project aims to create a simplified knowledge graph from article abstacts to
    ```
 2. Install the packages
    ```sh
-  pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 # Contributing
