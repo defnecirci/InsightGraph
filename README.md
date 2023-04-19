@@ -20,7 +20,7 @@ Our project aims to create a simplified knowledge graph from article abstacts to
 # Contributing
 We are still working on developing our project and would greatly appreciate your feedback and contributions.
 
-#License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
