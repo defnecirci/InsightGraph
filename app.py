@@ -4,6 +4,8 @@ import json
 import datetime
 import streamlit as st
 import config as cfg
+import networkx as nx
+import matplotlib.pyplot as plt
 from neo4j import GraphDatabase
 from collections import Counter
 
@@ -62,13 +64,29 @@ def show_graph(text):
         node_label_counts = Counter(node_labels)
         edge_types = [e["type"] for e in edges]
         edge_type_counts = Counter(edge_types)
+       
+        #Display nodes and edges information
         st.write("**Nodes**")       
         node_count_str = ' '.join([f"{item}: {count}" for item, count in node_label_counts.items()])
         st.write(node_count_str)
-
         st.write("**Edges**")
         edge_count_str = ' '.join([f"{item}: {count}" for item, count in edge_type_counts.items()])
         st.write(edge_count_str)
+        
+        #Display graph
+        G = nx.Graph()
+        for node in nodes:
+            G.add_node(node['id'],label=node['name'])
+        for edge in edges:
+            G.add_edge(edge['source'], edge['target'], **edge)            
+        fig, ax = plt.subplots(figsize=(8, 8))
+        pos = nx.spring_layout(G, k=1.8)
+        labels = nx.get_node_attributes(G, 'label')        
+        nx.draw(G, pos, with_labels=True, labels=labels, font_size=8, node_size=500, node_color='red', edge_color='blue', width=5)
+        edge_labels = {(edge['source'], edge['target']): edge['type'] for edge in edges}        
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels,verticalalignment='top',font_size=8,alpha=0.5)
+        st.pyplot(fig)
+       
        
     
 def main():
