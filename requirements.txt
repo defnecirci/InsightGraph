@@ -1,0 +1,5 @@
+streamlit
+neo4j
+openai
+networkx
+matplotlib
