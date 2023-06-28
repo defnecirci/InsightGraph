@@ -15,11 +15,31 @@ Our project aims to create a simplified knowledge graph from article abstacts to
 2. Install the packages
    ```sh
    pip install -r requirements.txt
-   ```   
-3. Run 
+   ```
+3. Specify authentication details in config.py
+
+   ```sh
+   openai_api_key = "openai_api_key"
+   neo4j_uri = "neo4j_uri"
+   neo4j_username = "neo4j_username"
+   neo4j_password = "neo4j_password"
+   ```
+   
+   Get Neo4j credentials by first creating a user account, and then creating a free instance.
+   On creation of an instance, you will be prompted to download authentication details containing uri,
+   username and password.
+   
+  ![alt text](https://github.com/defnecirci/InsightGraph/blob/3754651d7f8163c16685656f7798e23b7d0d0029/neo4j.png)
+
+   
+5. Run 
    ```sh
    streamlit run app.py
-   ```   
+   ```
+   
+6. To view and interact with the results on Neo4j Browser, you will be asked to authenticate with your credentials again (see config.py)
+
+   
 # Contributing
 We are still working on developing our project and would greatly appreciate your feedback and contributions.
 
