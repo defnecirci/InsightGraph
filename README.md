@@ -29,7 +29,7 @@ Our project aims to create a simplified knowledge graph from article abstacts to
    On creation of an instance, you will be prompted to download authentication details containing uri,
    username and password.
    
-   ![alt text] (https://github.com/defnecirci/InsightGraph/blob/351e2999cee5d4e0649e6bb50c9d89e9939365ba/neo4j.png)
+   ![alt text] (https://github.com/defnecirci/InsightGraph/blob/3754651d7f8163c16685656f7798e23b7d0d0029/neo4j.png)
 
    
 5. Run 
