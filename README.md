@@ -24,13 +24,11 @@ Our project aims to create a simplified knowledge graph from article abstacts to
    neo4j_username = "neo4j_username"
    neo4j_password = "neo4j_password"
    ```
-
-   Get OpenAI credentials from here:
-   ![alt text](https://github.com/defnecirci/InsightGraph/blob/351e2999cee5d4e0649e6bb50c9d89e9939365ba/openai.png)
    
    Get Neo4j credentials by first creating a user account, and then creating a free instance.
    On creation of an instance, you will be prompted to download authentication details containing uri,
    username and password.
+   
    ![alt text] (https://github.com/defnecirci/InsightGraph/blob/351e2999cee5d4e0649e6bb50c9d89e9939365ba/neo4j.png)
 
    
