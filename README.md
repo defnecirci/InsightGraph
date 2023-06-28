@@ -15,11 +15,23 @@ Our project aims to create a simplified knowledge graph from article abstacts to
 2. Install the packages
    ```sh
    pip install -r requirements.txt
-   ```   
-3. Run 
+   ```
+3. Specify authentication details in config.py
+
+   ```sh
+   openai_api_key = "openai_api_key"
+   neo4j_uri = "neo4j_uri"
+   neo4j_username = "neo4j_username"
+   neo4j_password = "neo4j_password"
+   ```
+   
+4. Run 
    ```sh
    streamlit run app.py
-   ```   
+   ```
+   
+5. To view and interact with the results on Neo4j Browser, you will be asked to authenticate with your credentials again.
+   
 # Contributing
 We are still working on developing our project and would greatly appreciate your feedback and contributions.
 
