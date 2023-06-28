@@ -41,7 +41,7 @@ def save_graph(graph,filename):
 
     def create_graph(tx, data):      
         for node in data["nodes"]:
-            tx.run("CREATE (:{} {{id: {}, name: '{}'}})".format(node["label"], node["id"]+start, node["name"]))    
+            tx.run("CREATE (:{} {{id: '{}', name: '{}'}})".format(node["label"], str(node["id"]+start), node["name"])) 
         for rel in data["edges"]:
             print (rel)
             rel["startLabels"] = data["nodes"][rel["source"]-1]["label"]
