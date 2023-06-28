@@ -2,7 +2,7 @@
 Welcome to our project submission for the LLMs for Chemistry and Materials Science Heckatlon that took place on March 29th, 2023.
 
 # Overview
-Our project aims to create a simplified knowledge graph from article abstacts to discover concepts and relevant articles. During the hackathon, we were able to (mention the main accomplishments). You can find our video submission here: https://twitter.com/DCirci/status/1641486022709059585?s=20.
+Our project aims to create a simplified knowledge graph from article abstacts to discover concepts and relevant articles. During the hackathon, we were able to design a web application that automatically extracts entities and relationships from material-science abstracts using a pre-defined schema.. You can find our video submission here: https://twitter.com/DCirci/status/1641486022709059585?s=20.
 
 # How to use
 
