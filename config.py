@@ -1,7 +1,7 @@
-openai_api_key = "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"
-neo4j_uri = "bolt://localhost:7687"
+openai_api_key = "replace_with_your_API_Key"
+neo4j_uri = "neo4j+s://f031e7e3.databases.neo4j.io"
 neo4j_username = "neo4j"
-neo4j_password = "12345678"
+neo4j_password = "5Ff2qHJTTNI9olaTW8g8e03SFEFs3dZF17u3RUIFxWI"
 
 
 prompt = "***Task***" 
