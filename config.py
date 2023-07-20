@@ -1,7 +1,7 @@
 openai_api_key = "replace_with_your_API_Key"
-neo4j_uri = "neo4j+s://f031e7e3.databases.neo4j.io"
-neo4j_username = "neo4j"
-neo4j_password = "5Ff2qHJTTNI9olaTW8g8e03SFEFs3dZF17u3RUIFxWI"
+neo4j_uri = "replace_with_your_neo4j_uri"
+neo4j_username = "replace_with_your_neo4j_username"
+neo4j_password = "replace_with_your_neo4j_password"
 
 
 prompt = "***Task***" 
